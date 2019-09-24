@@ -1,16 +1,26 @@
-# walk_till_drop
-
-A new Flutter project.
+# Walk Till Drop
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a Simple FLutter app created for the purpose of counting your steps.
+It is a basic app which shows your steps and calories burnt
 
-A few resources to get you started if this is your first Flutter project:
+## For Development Purpose
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Install all dependencies and then run 
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+
+## To Build an .apk
+
+From the command line:
+
+- Enter ``` cd walk-till-drop ```
+- Run ``` flutter build apk --split-per-abi ```
+(The flutter build command defaults to --release.)
+This command results in two APK files:
+
+walk-till-drop/build/app/outputs/apk/release/app-armeabi-v7a-release.apk
+walk-till-drop/build/app/outputs/apk/release/app-arm64-v8a-release.apk
+Removing the --split-per-abi flag results in a fat APK that contains your code compiled for all the target ABIs. Such APKs are larger in size than their split counterparts, causing the user to download native binaries that are not applicable to their device’s architecture.
+
