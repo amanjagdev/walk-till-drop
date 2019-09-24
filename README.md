@@ -20,7 +20,8 @@ From the command line:
 (The flutter build command defaults to --release.)
 This command results in two APK files:
 
-walk-till-drop/build/app/outputs/apk/release/app-armeabi-v7a-release.apk
-walk-till-drop/build/app/outputs/apk/release/app-arm64-v8a-release.apk
-Removing the --split-per-abi flag results in a fat APK that contains your code compiled for all the target ABIs. Such APKs are larger in size than their split counterparts, causing the user to download native binaries that are not applicable to their device’s architecture.
+``` walk-till-drop/build/app/outputs/apk/release/app-armeabi-v7a-release.apk```
+```walk-till-drop/build/app/outputs/apk/release/app-arm64-v8a-release.apk```
+
+- Removing the --split-per-abi flag results in a fat APK that contains your code compiled for all the target ABIs. Such APKs are larger in   size than their split counterparts, causing the user to download native binaries that are not applicable to their device’s architecture.
 
